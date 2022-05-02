@@ -1,0 +1,24 @@
+nav {
+    height: 60px;
+}
+
+section {
+    height: 100px;
+}
+
+div ul {
+
+    list-style: none;
+    display: inline-flex;
+    padding-inline-start: 50px;
+    
+}
+
+li {
+    margin-right: 30px;
+}
+.home:active {
+    background-color: blue;
+    color: white;
+}
+

@@ -1,0 +1,128 @@
+.main-section {
+    height: 100vh;
+}
+body h1 {
+    position: relative;
+    text-transform: uppercase;
+    animation-name: headingAnimate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    
+    
+
+}
+
+@keyframes headingAnimate{
+    0% { color: red; left:0%; top: 0% }
+    25% {color: green; left:25%; top:0%}
+    50% {color: yellow; left:50%; top:0%}
+    75% {color: blue; left:75%; top:0%}
+    100% {color: pink; left:100%; top:0%}
+}
+.main-section>div {
+    height: 12.5%;
+    /* missed width to include */
+    width: 12.5%;
+    float: left;
+}
+
+.animation-and-transition {
+    display: flex;
+}
+
+.transition-demo {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: width 5s, height 5s;
+    /* 5s is transition-duration */
+    transform: skewZ(37deg);
+
+}
+
+.transition-demo:hover {
+    width: 250px;
+    
+    /* transition-duration: 2s; */
+
+}
+
+.animation-demo {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: animat;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes animat {
+    from {
+        width: 50px
+    }
+
+    to {
+        height: 150px
+    }
+}
+
+
+
+.main-section .row-1 div:nth-child(odd),
+.main-section .row-3 div:nth-child(odd),
+.main-section .row-5 div:nth-child(odd),
+.main-section .row-7 div:nth-child(odd) {
+    /* missed to mention width, height and float of the each div*/
+    height: 100%;
+    width: 100%;
+    float: left;
+    background-color: black;
+}
+
+/** now adding white color */
+.main-section .row-1 div:nth-child(even),
+.main-section .row-3 div:nth-child(even),
+.main-section .row-5 div:nth-child(even),
+.main-section .row-7 div:nth-child(even) {
+    /* missed to mention width, height and float of the each div*/
+    height: 100%;
+    width: 100%;
+    float: left;
+    background-color: white;
+}
+
+
+.main-section .row-2 div:nth-child(even),
+.main-section .row-4 div:nth-child(even),
+.main-section .row-6 div:nth-child(even),
+.main-section .row-8 div:nth-child(even) {
+    /* missed to mention width, height and float of the each div*/
+    height: 100%;
+    width: 100%;
+    float: left;
+    background-color: black;
+}
+
+
+/* added these code */
+.main-section .row-2 div:nth-child(odd),
+.main-section .row-4 div:nth-child(odd),
+.main-section .row-6 div:nth-child(odd),
+.main-section .row-8 div:nth-child(odd) {
+
+    height: 100%;
+    width: 100%;
+    float: left;
+    background-color: white;
+}
+
+
+
+/* 
+1. less than 576px
+2. 768-
+3. 922
+4. 1200
+5. greater than 1200 */
