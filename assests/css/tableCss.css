@@ -1,0 +1,7 @@
+.main-body {
+    height: 100vh;
+}
+
+.table-class tbody:nth-child(odd) {
+    background-color: lightblue;
+}

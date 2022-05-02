@@ -1,0 +1,49 @@
+/********** Nav-bar ************/
+.nav-bar {
+    height: 40px;
+    background-color: rgb(163, 164, 233);
+
+}
+
+
+
+.head-1::first-letter {
+    font-size: 39px;
+}
+
+.para-3::first-line {
+    color: red;
+    ;
+}
+
+/* .nav-bar:hover {
+    background-color: green;
+} */
+.home:hover,
+.about-us:hover,
+.gallery:hover {
+    margin-top: 10px;
+    background-color: yellow;
+}
+
+h1::selection {
+    background-color: orange;
+}
+
+.about-us:link {
+    background-color: blue;
+}
+
+.home:active {
+    font-size: 45px;
+    color: black;
+    font-weight: bold;
+}
+
+.gallery:visited {
+    color: green;
+}
+
+#second_ul:nth-child(2) {
+    color: red;
+}
