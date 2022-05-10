@@ -177,7 +177,9 @@
     top: -50px
 }
 
-
+.left-bottom-body:nth-child(3) {
+    background-color: whitesmoke;
+}
 
 .left-main-body-bottom {
     background-color: rgb(216, 231, 244);
