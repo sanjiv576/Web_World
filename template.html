@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- for css -->
+    <style>
+        
+        @media  only screen and (max-width:992px) {
+            .rightContent {margin-top: 20px !important;}
+            
+        }
+
+        /* Note: unncomment color  of each div to understand  the code */
+
+        /* main body content */
+        .allContent {
+            margin-top: 10px;
+        }
+
+        /* left side of main body */
+        .leftContent,
+        .rightContent {
+            /* change height as the content needs */
+            height: 600px;
+            /* float: left; */
+        }
+
+
+
+        /* main content fo both left and right sides respectively */
+        .left-main-content,
+        .right-main-content {
+            margin: auto;
+            height: 100%;
+            width: 80%;
+        }
+
+        /* Note : remove comment to see background */
+
+        /* main content of left side */
+
+        /* .left-main-content {
+            background-color: brown;
+        } */
+
+
+        /* main content of right side */
+
+        /* .right-main-content {
+            background-color: grey;
+        } */
+
+
+        /* top and bottom contents of left side */
+        .left-top-content,
+        .left-bottom-content {
+            height: 48%;
+            width: 100%;
+        }
+
+        /* top content of left side */
+        .left-top-content {
+            background-color: yellow;
+            margin-bottom: 4%;
+        }
+
+        /* top content of right side */
+        .left-bottom-content {
+            background-color: black;
+        }
+
+        h4 {
+
+            background-color: darkblue;
+            color: white;
+            text-transform: uppercase;
+            padding: 4px;
+        }
+
+        /* top content of right side */
+
+        .right-top-content {
+            background-color: blanchedalmond;
+            height: 20%;
+            margin-bottom: 4%;
+        }
+
+        /* middle and bottom content of right side */
+        .right-middle-content,
+        .right-bottom-content {
+            height: 36%;
+        }
+
+        /* middle content of right side */
+        .right-middle-content {
+            background-color: wheat;
+            margin-bottom: 4%;
+        }
+
+        /* right bottom content of right side */
+        .right-bottom-content {
+            background-color: aqua;
+        }
+
+        .buttonContent {
+            height: 50px;
+        }
+
+        button {
+
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- space for Nav bar -->
+
+        <div class="row allContent">
+            <div class="leftContent col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                <div class="left-main-content">
+                    <div class="left-top-content">
+                        <h4 class="text-uppercase">heading here</h4>
+                        <p class="text-muted">
+                            Content here.....
+                        </p>
+                    </div>
+                    <div class="left-bottom-content">
+                        <h4 class="text-uppercase">heading here</h4>
+                        <p class="text-muted">
+                            Content here.....
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightContent col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                <div class="right-main-content ">
+                    <div class="right-top-content">
+                        <h4 class="text-uppercase">your are here</h4>
+                        <p class="text-muted">
+                            Content here.....
+                        </p>
+                    </div>
+
+                    <div class="right-middle-content">
+                        <h4 class="text-uppercase">Trip summary</h4>
+                        <p class="text-muted">
+                            Content here.....
+                        </p>
+                    </div>
+
+                    <div class="right-bottom-content">
+                        <h4 class="text-uppercase">fare summary</h4>
+                        <p class="text-muted">
+                            Content here.....
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttonContent text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <button type="button" class="btn btn-primary text-uppercase">continue</button>
+        </div>
+    </div>
+</body>
+
+</html>

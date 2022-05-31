@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Show text</title>
+</head>
+
+<body>
+
+    <textarea name="" id="para" cols="35" rows="6"></textarea>
+
+    <br><br>
+    <button onclick="showText()">Submit my text</button>
+
+    <br><br>
+    <p id="showPara"></p>
+
+</body>
+<script>
+
+
+
+    function showText(){
+        
+        var sthPara = document.getElementById('para').value;
+
+        if(sthPara==""){
+            alert("empty");
+        }
+        else {
+            var show = document.getElementById('showPara').innerText=sthPara;
+        }
+    }
+
+</script>
+
+</html>
